@@ -1,0 +1,12 @@
+<h1>There is {{number}} words in your text</h1>
+
+<a href="{% url 'myhome' %}">Start Again</a>
+<h1>Your Text</h1>
+{{fulltext}}
+
+<h1> Most Repeated word</h1>
+{% for word,count1 in rwords%}
+{{ word }}-{{count1}}
+<br/>
+
+{% endfor%}
